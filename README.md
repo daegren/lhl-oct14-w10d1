@@ -1,24 +1,21 @@
-# README
+# Rails Review
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Generators FTW!
+- ActiveRecord
+  - Way to model your data layer in Ruby
+  - SQL **Magic**!
+  - Object Relational Mapping (ORM)
+  - Database agnostic
+    - It uses adapters to connect to the correct database
+- MVC
+  - Model-View-Controller
+  - Pattern, separates the presentation of our data from the storage of the data
+  - Model: `ActiveRecord`
+  - View: HTML, JSON, XML, etc.
+  - Controller: Connects our data to the view
+- Convention over Configuration framework
+- Router
+  - Defines the routes, and connects them to controllers, but doesn't include the actual code
 
-Things you may want to cover:
+![rails request lifecycle](https://miro.medium.com/max/629/1*lFMcocBQ4zF-Q-_SvM8c7Q.jpeg)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
