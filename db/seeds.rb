@@ -6,14 +6,20 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-100.times do
+10.times do
   user = User.create!({name: Faker::Name.name, email: Faker::Internet.email})
 
-  50.times do
-    Post.create!({
+  5.times do
+    post = Post.create!({
       author: user,
       title: Faker::Quote.famous_last_words,
       body: Faker::Lorem.paragraphs(number: 3).join("\n")
     })
+
+    5.times do
+      post.comments.create!({
+        body: Faker::Quote.famous_last_words
+      })
+    end
   end
 end

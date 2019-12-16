@@ -11,18 +11,9 @@
 </p>
 
 <p>
-  <strong>Body:</strong>
-  <%= @post.body %>
+  <strong>Comment Body:</strong>
+  <%= @comment.body %>
 </p>
-
-<div>
-<h2>Comments</h2>
-
-<% @post.comments.each do |comment| %>
-<p><%= comment.body %></p>
-<% end %>
-
-</div>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
